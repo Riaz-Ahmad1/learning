@@ -24,7 +24,7 @@ Route::post('/users/authenticate',[LoginController::class, 'authenticate']);
 
 Route::get('/admin',[LoginController::class,'admin']);
 
-
+// front page routes setting
 Route::get('services', function () {
     return view('services');
 })->name('services');

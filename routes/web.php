@@ -24,18 +24,9 @@ Route::post('/users/authenticate',[LoginController::class, 'authenticate']);
 
 Route::get('/admin',[LoginController::class,'admin']);
 
-Route::get('about', function () {
-    return view('about');
-})->name('about');
-
-Route::get('contact', function () {
-    return view('contact');
-})->name('contact');
 
 Route::get('services', function () {
     return view('services');
 })->name('services');
 
-Route::get('testimonial', function () {
-    return view('testimonial');
-})->name('testimonial');
+

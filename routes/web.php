@@ -20,7 +20,7 @@ Route::post('/logout',[LoginController::class, 'logout']);
 Route::get('/login',[LoginController::class, 'login']);
 Route::post('/users/authenticate',[LoginController::class, 'authenticate']);
 
-// dashboard
+// dashboard dashboard
 
 Route::get('/admin',[LoginController::class,'admin']);
 

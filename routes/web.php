@@ -24,6 +24,12 @@ Route::post('/users/authenticate',[LoginController::class, 'authenticate']);
 
 Route::get('/admin',[LoginController::class,'admin']);
 
+
+Route::get('/no-access',function(){
+  echo 'You have no access to page';
+  die();
+});
+
 // front page routes setting
 Route::get('services', function () {
     return view('services');
